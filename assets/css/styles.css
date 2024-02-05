@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #fff;
+}
+
+::selection {
+    background-color: #95d246;
+    color: white;
+}
+
+.wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+.wrapper nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5rem;
+}
+
+nav .logo {
+    width: 4.5rem;
+}
+
+nav .logo img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.logo img:hover {
+    transform: scale(0.75);
+}
+
+nav button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+    background-color: #95d246;
+    border: none;
+    outline: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    color: white;
+}
+
+nav button:hover {
+    letter-spacing: .2rem;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main__text {
+    text-transform: uppercase;
+    width: 60%;
+}
+
+.main__text h1 {
+    font-size: 4rem;
+}
+
+.main__text h3 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.main__text button {
+    background-color: #95d246;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.main__text button:hover {
+    letter-spacing: .2rem;
+}
+
+.main__text .main__text-footer {
+    display: flex;
+    padding: 3rem 0 1rem;
+}
+
+.main__text .main__text-footer h4 {
+    color: #686767;
+    font-size: 1rem;
+}
+
+.main__text .main__text-footer p {
+    margin-top: 0.6rem;
+    color: #8d8c8c;
+    font-weight: 500;
+}
+
+.main__text .main__text-footer div:nth-child(1) {
+    padding: 0 3.1rem 0 0;
+}
+
+main .main__img {
+    width: 30rem;
+}
+
+
+@media (max-width:800px) {
+    main {
+        flex-direction: column;
+    }
+
+    main .main__img,
+    main .main__text {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width:500px) {
+    .main__text .main__text-footer {
+        flex-wrap: wrap;
+        padding-top: 2.5rem;
+    }
+
+    .main__text .main__text-footer div {
+        padding: 0.9rem 0 !important;
+    }
+}
+
+@media (max-width:400px) {
+    .main__text h1 {
+        font-size: 3.5rem;
+    }
+
+    .main__text h3 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:300px) {
+    .main__text h1 {
+        font-size: 2.5rem;
+    }
+
+}
